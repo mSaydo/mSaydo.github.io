@@ -1,6 +1,9 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
     font-family: 'TelegramFont', sans-serif;
     background-color: var(--tg-theme-bg-color, white);
     color: var(--tg-theme-text-color, black);
@@ -9,8 +12,10 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -20,12 +25,12 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 10px 0;
+    box-sizing: border-box;
 }
 
 .row img {
     width: 45%;
     height: auto;
     max-width: 45%;
-    max-height: calc(100vh / 3 - 20px);
     object-fit: cover;
 }
